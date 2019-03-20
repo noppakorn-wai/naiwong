@@ -38,8 +38,8 @@ yarn dev
 
 This project aim to support deployment on
 
-* Firebase
-* Now
+* [Firebase](https://firebase.google.com/)
+* [Now](https://zeit.co/now)
 * Custom Node.js server
 
 ## Built With
