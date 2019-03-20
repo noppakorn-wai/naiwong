@@ -1,0 +1,10 @@
+{
+  "name": "naiwong",
+  "version": "1.0.0",
+  "description": "Playground project using react and node.js to create restaurant searching application",
+  "main": "index.js",
+  "repository": "git@github.com:waitwing/naiwong.git",
+  "author": "Noppakorn Chaiboonruang <noppakorn.cb@gmail.com> (https://waitwing.com/)",
+  "license": "MIT",
+  "private": true
+}
