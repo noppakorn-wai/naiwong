@@ -1,3 +1,1 @@
-export default (req) => ({
-  status: req?.url,
-})
+export default () => 'Hello World!'

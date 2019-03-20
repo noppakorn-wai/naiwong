@@ -1,5 +1,7 @@
 # Naiwong
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/d37c534d2dae716d480f/maintainability)](https://codeclimate.com/github/waitwing/naiwong/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d37c534d2dae716d480f/test_coverage)](https://codeclimate.com/github/waitwing/naiwong/test_coverage) [![Known Vulnerabilities](https://snyk.io/test/github/waitwing/naiwong/badge.svg?targetFile=package.json)](https://snyk.io/test/github/waitwing/naiwong?targetFile=package.json)
+
 Playground project using react and node.js to create restaurant searching application.
 
 ## Getting Started
@@ -38,17 +40,17 @@ yarn dev
 
 This project aim to support deployment on
 
-* [Firebase](https://firebase.google.com/)
-* [Now](https://zeit.co/now)
-* Custom Node.js server
+- [Firebase](https://firebase.google.com/)
+- [Now](https://zeit.co/now)
+- Custom Node.js server
 
 ## Built With
 
-* [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-* [Next.js](https://nextjs.org/) - The React framework for server side rendering
-* [Micro](https://github.com/zeit/micro/) - Asynchronous HTTP microservices
-* [React-Bootstrap](https://react-bootstrap.github.io/) - Bootstrap components built with React
-* [Emotion](https://emotion.sh/) - Performant and flexible CSS-in-JS library
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Next.js](https://nextjs.org/) - The React framework for server side rendering
+- [Micro](https://github.com/zeit/micro/) - Asynchronous HTTP microservices
+- [React-Bootstrap](https://react-bootstrap.github.io/) - Bootstrap components built with React
+- [Emotion](https://emotion.sh/) - Performant and flexible CSS-in-JS library
 
 ## Contributing
 
@@ -56,11 +58,11 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/waitwing/naiwong/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/waitwing/naiwong/tags).
 
 ## Authors
 
-* **Noppakorn Chaiboonruang** - *Initial work* - [Wai](https://github.com/waitwing)
+- **Noppakorn Chaiboonruang** - _Initial work_ - [Wai](https://github.com/waitwing)
 
 See also the list of [contributors](https://github.com/waitwing/naiwong/contributors) who participated in this project.
 
@@ -70,6 +72,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Inspiration from [Wongnai](https://www.wongnai.com/)
-* Document template from [PurpleBooth](https://gist.github.com/PurpleBooth)
-
+- Inspiration from [Wongnai](https://www.wongnai.com/)
+- Document template from [PurpleBooth](https://gist.github.com/PurpleBooth)

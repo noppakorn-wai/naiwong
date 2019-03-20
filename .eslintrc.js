@@ -24,7 +24,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
     'linebreak-style': ['error', 'unix'],
-    'max-len': ['error', { code: 100, ignoreUrls: true }],
+    'max-len': ['error', { code: 100, ignoreComments: true, ignoreUrls: true }],
     'no-console': ['error', { allow: ['debug', 'info', 'warn', 'error'] }],
     'no-lonely-if': 'off',
     'prefer-destructuring': 'off',
