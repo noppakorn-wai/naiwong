@@ -1,6 +1,6 @@
 # Naiwong
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/d37c534d2dae716d480f/maintainability)](https://codeclimate.com/github/waitwing/naiwong/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d37c534d2dae716d480f/test_coverage)](https://codeclimate.com/github/waitwing/naiwong/test_coverage) [![Known Vulnerabilities](https://snyk.io/test/github/waitwing/naiwong/badge.svg?targetFile=package.json)](https://snyk.io/test/github/waitwing/naiwong?targetFile=package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/waitwing/naiwong.svg)](https://greenkeeper.io/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d37c534d2dae716d480f/maintainability)](https://codeclimate.com/github/waitwing/naiwong/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d37c534d2dae716d480f/test_coverage)](https://codeclimate.com/github/waitwing/naiwong/test_coverage) [![Known Vulnerabilities](https://snyk.io/test/github/waitwing/naiwong/badge.svg?targetFile=package.json)](https://snyk.io/test/github/waitwing/naiwong?targetFile=package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/waitwing/naiwong.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/waitwing/naiwong.svg?branch=master)](https://travis-ci.org/waitwing/naiwong)
 
 Playground project using react and node.js to create restaurant searching application.
 
