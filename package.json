@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "babel-node ./node_modules/.bin/micro-dev",
+    "dev": "babel-node -- ./node_modules/.bin/micro-dev --ignore='.next|__tests__|www/pages'",
     "test": "jest"
   },
   "devDependencies": {
@@ -36,10 +36,18 @@
     "jest": "^24.5.0",
     "lint-staged": "^8.1.5",
     "micro-dev": "^3.0.0",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "react-test-renderer": "^16.8.4",
+    "react-testing-library": "^6.0.1"
   },
   "dependencies": {
-    "micro": "^9.3.3"
+    "axios": "^0.18.0",
+    "micro": "^9.3.3",
+    "microrouter": "^3.1.3",
+    "next": "^8.0.3",
+    "react": "^16.8.4",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.8.4"
   },
   "husky": {
     "hooks": {
