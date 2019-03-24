@@ -13,7 +13,7 @@ const HeroContentContainer = styled(Container)`
   min-height: calc(100vh - 66px);
   padding: 32px 0;
   > h2,
-  > p {
+  > div > p {
     text-align: center;
     color: white;
     font-weight: bold;
@@ -24,7 +24,7 @@ const HeroContentContainer = styled(Container)`
 const HomePage = ({ router }) => {
   const keyword = router.query.keyword || 'Bangsue'
   const [searchResults, setSearchResults] = useState([])
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
     async function fetchResult() {
       setIsLoading(true)
@@ -94,12 +94,14 @@ const HomePage = ({ router }) => {
       >
         <HeroContentContainer>
           <h2>ค้นหาร้านอาหารที่ถูกใจคุณ</h2>
-          <Row>
-            <Col md={2} />
-            <Col xs={12} md={8}>
-              <SearchWidget keyword={keyword} onSubmit={handleSearch} />
-            </Col>
-          </Row>
+          <Container>
+            <Row>
+              <Col md={2} />
+              <Col xs={12} md={8}>
+                <SearchWidget keyword={keyword} onSubmit={handleSearch} />
+              </Col>
+            </Row>
+          </Container>
           <br />
           {isLoading ? (
             <Spinner
@@ -112,10 +114,10 @@ const HomePage = ({ router }) => {
               `}
             />
           ) : (
-            <>
+            <Container>
               <p>{`ค้นพบ ${searchResults.length} ผลการค้นหา`}</p>
               <SearchResults results={searchResults} />
-            </>
+            </Container>
           )}
         </HeroContentContainer>
       </div>
