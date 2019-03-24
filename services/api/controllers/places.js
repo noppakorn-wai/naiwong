@@ -6,18 +6,19 @@ export const listPlace = async (req) => {
     data: { results },
   } = await axios('https://maps.googleapis.com/maps/api/place/textsearch/json', {
     params: {
-      key: process.env.GOOGLE_MAP_API_LKEY,
-      type: 'restaurent',
+      key: process.env.GOOGLE_MAP_API_KEY,
+      type: 'restaurant',
       query: req.query.keyword,
       region: 'TH',
       language: 'TH',
     },
   })
   return {
-    results: results.map(({ id, name, formatted_address: formattedAddress }) => ({
+    results: results.map(({ id, name, formatted_address: formattedAddress, ...rest }) => ({
       id,
       name,
       formattedAddress,
+      ...rest,
     })),
   }
 }
