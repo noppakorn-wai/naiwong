@@ -14,11 +14,10 @@ export const listPlace = async (req) => {
     },
   })
   return {
-    results: results.map(({ id, name, formatted_address: formattedAddress, ...rest }) => ({
+    results: results.map(({ id, name, formatted_address: formattedAddress }) => ({
       id,
       name,
       formattedAddress,
-      ...rest,
     })),
   }
 }
