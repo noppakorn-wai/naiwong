@@ -41,6 +41,15 @@
             "value": "max-age=200000"
           }
         ]
+      },
+      {
+        "source": "/api/places",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=180"
+          }
+        ]
       }
     ],
     "rewrites": [
