@@ -1,4 +1,4 @@
 import { router } from 'microrouter'
-import status from './controllers/status'
+import places from './controllers/places'
 
-export default router(status)
+export default router(places)

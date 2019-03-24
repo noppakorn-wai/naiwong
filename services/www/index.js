@@ -1,13 +1,18 @@
 import { router, get } from 'microrouter'
 import next from 'next'
-import conf from './next.config'
 
 const dev = process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test'
 
+const dir = (() => {
+  if (dev) return './services/www'
+  const { existsSync } = require('fs') // eslint-disable-line global-require
+  if (existsSync('./.build')) return './.build'
+  return '.'
+})()
+
 const app = next({
-  conf,
   dev,
-  dir: __dirname,
+  dir,
 })
 
 if (dev) app.prepare()

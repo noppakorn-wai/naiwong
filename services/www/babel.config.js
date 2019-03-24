@@ -1,29 +1,38 @@
 module.exports = {
   presets: [
-    '@emotion/babel-preset-css-prop',
     [
-      '@babel/preset-env',
+      'next/babel',
       {
-        targets: {
-          node: '8.10',
-          browsers: ['defaults', 'ie 11'],
+        'preset-env': {
+          targets: {
+            node: '8.10',
+            browsers: ['defaults', 'ie 11'],
+          },
         },
+        'transform-runtime': {
+          useESModules: false,
+        },
+        'styled-jsx': {},
+        'class-properties': {},
       },
     ],
+    '@emotion/babel-preset-css-prop',
   ],
   plugins: [
     'emotion',
-    '@babel/plugin-transform-runtime',
-    '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-optional-chaining',
     [
       'module-resolver',
       {
         root: ['./services'],
-        alias: {
-          services: './services',
-        },
       },
+    ],
+    [
+      'import',
+      {
+        libraryName: 'antd',
+      },
+      'antd',
     ],
     [
       'import',

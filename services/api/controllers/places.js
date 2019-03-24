@@ -1,0 +1,25 @@
+import { router, get } from 'microrouter'
+import axios from 'axios'
+
+export const listPlace = async (req) => {
+  const {
+    data: { results },
+  } = await axios('https://maps.googleapis.com/maps/api/place/textsearch/json', {
+    params: {
+      key: process.env.GOOGLE_MAP_API_LKEY,
+      type: 'restaurent',
+      query: req.query.keyword,
+      region: 'TH',
+      language: 'TH',
+    },
+  })
+  return {
+    results: results.map(({ id, name, formatted_address: formattedAddress }) => ({
+      id,
+      name,
+      formattedAddress,
+    })),
+  }
+}
+
+export default router(get('/api/places', listPlace))
