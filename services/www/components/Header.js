@@ -29,7 +29,6 @@ const Header = () => (
           wong
         </span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
     </Container>
   </Navbar>
 )
