@@ -14,7 +14,7 @@
     "dev": "babel-node -- ./node_modules/.bin/micro-dev --ignore='.next|__tests__|www/(components|pages|static)'",
     "test": "jest",
     "build:services": "webpack --config internal/webpack.production.js",
-    "build:www": "next build services/www && cpx \"services/www/.next/**\" .build/.next && cpx \".build/.next/static/**\" .build/public/_next/static && cpx \"services/www/static/**\" .build/public/static",
+    "build:www": "next build services/www && cpx \"services/www/.next/**\" .build/.next && cpx \".build/.next/static/**\" .build/public/_next/static && cpx \"services/www/static/**\" .build/public/static && cpx \".build/service-worker.js\" .build/public",
     "build": "concurrently yarn:build:* && cpx \"*{package.json,yarn.lock}\" .build"
   },
   "devDependencies": {
