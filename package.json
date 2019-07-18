@@ -58,7 +58,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.4.2",
+    "@babel/runtime": "^7.5.5",
     "@emotion/core": "^10.0.9",
     "@emotion/styled": "^10.0.9",
     "axios": "^0.18.0",
