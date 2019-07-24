@@ -63,7 +63,7 @@
     "@emotion/styled": "^10.0.9",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
-    "firebase-admin": "^7.1.1",
+    "firebase-admin": "^8.3.0",
     "firebase-functions": "^2.2.1",
     "micro": "^9.3.3",
     "microrouter": "^3.1.3",
